@@ -1,4 +1,1 @@
-scala-utils
-===========
-
-Reusable Scala code from SnowPlow Analytics
+A fistful of idiosyncratic, small general-purpose tools for Scala.
