@@ -20,6 +20,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 [issues]: https://github.com/snowplow/scala-util/issues
-[contact]: mailto:contribute@snowplowanalytics.com
+[email]: mailto:support@snowplowanalytics.com
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [snowplow-user]: https://groups.google.com/d/forum/snowplow-user
