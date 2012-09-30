@@ -23,7 +23,9 @@ More tools coming soon...
 
 ## Questions or need help?
 
-Please [raise an issue] [issues], contact us at [support@snowplowanalytics.com] [email] or join our [SnowPlow Google Group] [snowplow-user].
+This is a SnowPlow Analytics project. Please see the [Talk to us]
+[snowplow-talk] page on the SnowPlow wiki for ways of getting in
+touch.
 
 ## Copyright and license
 
@@ -40,6 +42,5 @@ limitations under the License.
 
 [twitter-util]: https://github.com/twitter/util
 [issues]: https://github.com/snowplow/scala-util/issues
-[email]: mailto:support@snowplowanalytics.com
 [license]: http://www.apache.org/licenses/LICENSE-2.0
-[snowplow-user]: https://groups.google.com/d/forum/snowplow-user
+[snowplow-talk]: https://github.com/snowplow/snowplow/wiki/Talk-to-us
