@@ -1,6 +1,6 @@
 # Scala Util
 
-A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by (and in some cases, [rejected by] [tap-request]) Twitter's own [Util] [twitter-util] project.
+A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by Twitter's own [Util] [twitter-util] project.
 
 ## Quick start
 
@@ -34,7 +34,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[tap-request]: https://github.com/twitter/util/pull/38
 [twitter-util]: https://github.com/twitter/util
 [issues]: https://github.com/snowplow/scala-util/issues
 [email]: mailto:support@snowplowanalytics.com
