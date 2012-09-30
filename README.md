@@ -17,6 +17,10 @@ val expectedEvent = new SnowPlowEvent().tap { e =>
 }
 ```
 
+### More soon
+
+More tools coming soon...
+
 ## Questions or need help?
 
 Please [raise an issue] [issues], contact us at [support@snowplowanalytics.com] [email] or join our [SnowPlow Google Group] [snowplow-user].
