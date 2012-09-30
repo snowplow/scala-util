@@ -13,7 +13,7 @@
 import sbt._
 import Keys._
 
-object SnowPlowUtilBuild extends Build {
+object ScalaUtilBuild extends Build {
 
   import Dependencies._
   import BuildSettings._
@@ -24,7 +24,7 @@ object SnowPlowUtilBuild extends Build {
   }
 
   // Define our project, with basic project information and library dependencies
-  lazy val project = Project("snowplow-util", file("."))
+  lazy val project = Project("scala-util", file("."))
     .settings(buildSettings: _*)
     .settings(
       libraryDependencies ++= Seq(

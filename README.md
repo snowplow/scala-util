@@ -2,6 +2,18 @@
 
 A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by Twitter's own [Util] [twitter-util] project.
 
+# Using in your project
+
+Pre-compiled jars are available in the SnowPlow Analytics Maven repository, here: http://maven.snplow.com/
+
+We use [Semantic Versioning] [semver] for published artifacts.
+
+An example SBT dependency string for the latest version of Scala Util would look like this:
+
+```scala
+val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.1.0"
+```
+
 ## Quick start
 
 ### Tap
@@ -42,6 +54,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 [twitter-util]: https://github.com/twitter/util
+[semver]: http://semver.org/
 [tap-blog]: http://www.naildrivin5.com/blog/2012/06/22/tap-versus-intermediate-variables.html
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [snowplow-talk]: https://github.com/snowplow/snowplow/wiki/Talk-to-us
