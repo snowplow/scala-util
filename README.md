@@ -7,7 +7,7 @@ A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by (
 ### Tap
 
 ```scala
-val expected = new SnowPlowEvent().tap { e =>
+val expectedEvent = new SnowPlowEvent().tap { e =>
   e.mkt_medium = "cpc"
   e.mkt_source = null
   e.mkt_term = "buy scifi books"
