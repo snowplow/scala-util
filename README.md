@@ -6,6 +6,8 @@ A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by T
 
 ### Tap
 
+Ruby-style `tap()` for all objects. See [this blog post] [tap-blog] for background.
+
 ```scala
 import com.snowplowanalytics.util.Tap._
 val event = new SnowPlowEvent().tap { e =>
@@ -23,9 +25,8 @@ More tools coming soon...
 
 ## Questions or need help?
 
-This is a SnowPlow Analytics project. Please see the [Talk to us]
-[snowplow-talk] page on the SnowPlow wiki for ways of getting in
-touch.
+This is a SnowPlow Analytics project. Please see the [Talk to us] [snowplow-talk]
+page on the SnowPlow wiki for ways of getting in touch.
 
 ## Copyright and license
 
@@ -41,6 +42,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 [twitter-util]: https://github.com/twitter/util
-[issues]: https://github.com/snowplow/scala-util/issues
+[tap-blog]: http://www.naildrivin5.com/blog/2012/06/22/tap-versus-intermediate-variables.html
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [snowplow-talk]: https://github.com/snowplow/snowplow/wiki/Talk-to-us
