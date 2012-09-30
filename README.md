@@ -7,6 +7,7 @@ A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by (
 ### Tap
 
 ```scala
+import com.snowplowanalytics.util.Tap._
 val expectedEvent = new SnowPlowEvent().tap { e =>
   e.mkt_medium = "cpc"
   e.mkt_source = null
