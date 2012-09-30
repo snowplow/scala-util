@@ -41,8 +41,7 @@ class TapTest extends Specification {
 			untappedStack.push(2)
 			untappedStack.pop()
 
-			tappedStack.pop() must beEqualTo (untappedStack.pop())
-			// TODO: would be nice to do object equality test - but fails currently
+			tappedStack ==== untappedStack
 		}
 	}
 }
