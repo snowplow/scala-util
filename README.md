@@ -2,16 +2,16 @@
 
 A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by Twitter's own [Util] [twitter-util] project.
 
-# Using in your project
+# Installation
 
-Pre-compiled jars are available in the SnowPlow Analytics Maven repository, here: http://maven.snplow.com/
-
-We use [Semantic Versioning] [semver] for published artifacts.
-
-An example SBT dependency string for the latest version of Scala Util would look like this:
+Add this to your SBT config:
 
 ```scala
-val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.1.0"
+// Resolver
+val snowplowRepo = "SnowPlow Repo" at "http://maven.snplow.com/releases/"
+
+// Dependency
+val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.1.0" 
 ```
 
 ## Quick start
