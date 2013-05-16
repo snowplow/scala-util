@@ -1,5 +1,7 @@
 # Scala Util
 
+[![Build Status](https://travis-ci.org/snowplow/scala-util.png)](https://travis-ci.org/snowplow/scala-util)
+
 A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by Twitter's own [Util] [twitter-util] project.
 
 # Installation
