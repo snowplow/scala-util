@@ -21,7 +21,7 @@ object BuildSettings {
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
     organization  := "ed",
-    version       := "0.1.4",
+    version       := "0.1.5",
     description   := "Idiosyncratic, small general-purpose tools for Scala",
     scalaVersion  := "2.9.1",
     scalacOptions := Seq("-deprecation", "-encoding", "utf8")
