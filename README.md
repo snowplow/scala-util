@@ -58,3 +58,5 @@ limitations under the License.
 [tap-blog]: http://www.naildrivin5.com/blog/2012/06/22/tap-versus-intermediate-variables.html
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [snowplow-talk]: https://github.com/snowplow/snowplow/wiki/Talk-to-us
+
+
