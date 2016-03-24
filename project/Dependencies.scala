@@ -13,9 +13,6 @@
 import sbt._
 
 object Dependencies {
-  val resolutionRepos = Seq(
-    ScalaToolsSnapshots
-  )
 
   object V {
     val specs2    = "1.12.1"

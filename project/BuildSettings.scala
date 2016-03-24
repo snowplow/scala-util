@@ -12,32 +12,25 @@
  */
 import sbt._
 import Keys._
+import bintray.AttrMap
+import bintray._
+import bintray.BintrayPlugin._
 
 object BuildSettings {
 
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
-    organization  := "SnowPlow Analytics Ltd",
-    version       := "0.1.0",
+    organization  := "ed",
+    version       := "0.1.4",
     description   := "Idiosyncratic, small general-purpose tools for Scala",
     scalaVersion  := "2.9.1",
-    scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
-    resolvers     ++= Dependencies.resolutionRepos
+    scalacOptions := Seq("-deprecation", "-encoding", "utf8")
   )
 
-  // Publish settings
-  // TODO: update with ivy credentials etc when we start using Nexus
   lazy val publishSettings = Seq[Setting[_]](
-   
-    crossPaths := false,
-    publishTo <<= version { version =>
-      val keyFile = (Path.userHome / ".ssh" / "admin_keplar.osk")
-      val basePath = "/var/www/maven.snplow.com/prod/public/%s".format {
-        if (version.trim.endsWith("SNAPSHOT")) "snapshots/" else "releases/"
-      }
-      Some(Resolver.sftp("SnowPlow Analytics Maven repository", "prodbox", 8686, basePath) as ("admin", keyFile))
-    }
+    publishMavenStyle := false,
+    licenses +=("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.txt"))
   )
 
-  lazy val buildSettings = basicSettings ++ publishSettings
+  lazy val buildSettings = basicSettings ++ publishSettings ++ bintraySettings
 }
