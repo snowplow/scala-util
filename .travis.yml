@@ -9,9 +9,5 @@ env:
   global:
   - secure: Xc89cKNmdBw8g3rdEYi5fKx21oAOKj/HDsGHa3a8oUafPITquvu05Ilys7KeBBKWs3bvFUX2bOa7sxH3fZiYLDzmblKOVEa6UENg2Ga/m+6eNDG4s61fdTYhIGlV6U7GEknlzgcIjrQOKW0EyPUZOoFtPRpNpLMFS7Hmszee3IY=
   - secure: Rb0XBBIENNw0CDZSXOwFZZyDHzL1UIDvg3IVcwtKaWuWutNq1M6qndN0xsVF06UqTSFBKIDyhTUWhOgJ5JBmo6To3d4oPtyc3K0kwI6IoofaOvnzI4thWC2TBGWTOE5IerKu+BVF6KAfs+tNWCP4pr/8rqM8J+lZ6aautOkQ6iM=
-after-success:
-  - test "${TRAVIS_PULL_REQUEST}" = 'false'
-  - test "${TRAVIS_JDK_VERSION}" = 'oraclejdk7'
-  - sh "$TRAVIS_BUILD_DIR/.travis/bintray_credentials.sh"
-  - sbt publish
-  - rm ~/.bintray/.credentials
+before_script: .travis/bintray_credentials.sh
+script: sbt publish
