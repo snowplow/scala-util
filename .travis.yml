@@ -11,6 +11,6 @@ deploy:
   provider: script
   script: ./.travis/deploy.sh
   on:
-    branch: no-pr
+    branch: mock-master
 
         
