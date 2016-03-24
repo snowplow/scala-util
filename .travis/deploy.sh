@@ -11,5 +11,5 @@ EOF
 
 cd $TRAVIS_BUILD_DIR
 pwd
-sbt release
+sbt publish
 
