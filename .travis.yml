@@ -1,7 +1,15 @@
 language: scala
 scala:
-   - 2.9.1
+- 2.9.1
 jdk:
-  - oraclejdk7
-  - openjdk6
-  - openjdk7
+- oraclejdk7
+env:
+  global:
+  - secure: ZWaD0YaoER4KUDuxziqSrfhezbaFyij/oV+WCGrBYOoUT5gNqox+0Mq6rn6pjniIeB2z82vDadADmjJFeKTf81xqWKmYgv2ELHQpU8aPjdQclYyaPDUNPH8EKTetrjI7O53otzWJ2hVwSJOcwuSptk7+OP4U/3r000MzQ5B5Yxg=
+  - secure: BpSLFj9wodd15cvTOFX26JA8dBeN1DQO0HU3Kp855bEMQBkPbgi889e/gzB/LfDmaxs1lQEfpXYTDUbA5+bTnLZewgR10N9II0kEN1LNwuq2h6ptWhHRnM5PuQmvCXAK3J/d/94vo/oV9PDcXBoUzI6e9S8YjRhGyLiwlLoQvw8=
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./.travis/deploy.sh
+  on:
+    branch: master

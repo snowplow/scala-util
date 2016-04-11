@@ -8,7 +8,7 @@ Add this to your SBT config:
 
 ```scala
 // Resolver
-val snowplowRepo = "SnowPlow Repo" at "http://maven.snplow.com/releases/"
+val snowplowRepo = "Snowplow Repo" at "http://maven.snplow.com/releases/"
 
 // Dependency
 val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.1.0" 
@@ -37,12 +37,12 @@ More tools coming soon...
 
 ## Questions or need help?
 
-This is a SnowPlow Analytics project. Please see the [Talk to us] [snowplow-talk]
-page on the SnowPlow wiki for ways of getting in touch.
+This is a Snowplow Analytics project. Please see the [Talk to us] [snowplow-talk]
+page on the Snowplow wiki for ways of getting in touch.
 
 ## Copyright and license
 
-Scala Util is copyright 2012 SnowPlow Analytics Ltd.
+Scala Util is copyright 2012 Snowplow Analytics Ltd.
 
 Licensed under the [Apache License, Version 2.0] [license] (the "License");
 you may not use this software except in compliance with the License.
@@ -58,3 +58,4 @@ limitations under the License.
 [tap-blog]: http://www.naildrivin5.com/blog/2012/06/22/tap-versus-intermediate-variables.html
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [snowplow-talk]: https://github.com/snowplow/snowplow/wiki/Talk-to-us
+
