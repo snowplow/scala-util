@@ -1,3 +1,8 @@
+Version 0.2.1 (2016-05-03)
+--------------------------
+Update instructions for install to use Maven Central
+Expand buildscript for use with Maven Central
+
 Version 0.2.0 (2016-04-11)
 --------------------------
 Set up CI/CD (close #7)

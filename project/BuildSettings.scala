@@ -20,10 +20,11 @@ object BuildSettings {
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
     organization  := "com.snowplowanalytics",
-    version       := "0.2.0",
+    version       := "0.2.1",
     description   := "Idiosyncratic, small general-purpose tools for Scala",
     scalaVersion  := "2.9.1",
-    scalacOptions := Seq("-deprecation", "-encoding", "utf8")
+    scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
+    crossPaths    := false // this will *remove* scala versioning information from the resulting artifact! Used only here for backwards compatibility!
   )
 
   // bintray publishing settings
@@ -33,5 +34,20 @@ object BuildSettings {
     bintrayRepository := "snowplow-maven"
   )
 
-  lazy val buildSettings = basicSettings ++ publishSettings
+  lazy val mavenCentralExtras = Seq[Setting[_]](
+    pomIncludeRepository := { x => false },
+    homepage := Some(url("http://snowplowanalytics.com")),
+    scmInfo := Some(ScmInfo(url("https://github.com/snowplow/scala-util"), "scm:git@github.com:snowplow/scala-util.git")),
+    pomExtra := (
+      <developers>
+        <developer>
+          <name>Snowplow Analytics Ltd</name>
+          <email>support@snowplowanalytics.com</email>
+          <organization>Snowplow Analytics Ltd</organization>
+          <organizationUrl>http://snowplowanalytics.com</organizationUrl>
+        </developer>
+      </developers>)
+  )
+
+  lazy val buildSettings = basicSettings ++ publishSettings ++ mavenCentralExtras
 }

@@ -7,11 +7,8 @@ A fistful of idiosyncratic, small general-purpose tools for Scala. Inspired by T
 Add this to your SBT config:
 
 ```scala
-// Resolver
-val snowplowRepo = "Snowplow Repo" at "http://maven.snplow.com/releases/"
-
 // Dependency
-val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.1.0" 
+val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.2.1" 
 ```
 
 ## Quick start
