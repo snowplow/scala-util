@@ -8,7 +8,7 @@ Add this to your SBT config:
 
 ```scala
 // Dependency
-val scalaUtil = "com.snowplowanalytics"   % "util"   % "0.2.1" 
+val scalaUtil = "com.snowplowanalytics"   % "scala-util"   % "0.2.1" 
 ```
 
 ## Quick start
